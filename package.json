@@ -17,5 +17,8 @@
         "type": "git",
         "url": "https://github.com/Ashaheen892/tw-social-media-elements"
     },
-    "private": true
+    "private": true,
+    "dependencies": {
+        "lit": "^3.3.2"
+    }
 }
