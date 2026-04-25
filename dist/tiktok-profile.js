@@ -1,71 +1,66 @@
-import { LitElement as n, html as k } from "lit";
-import { property as d } from "lit/decorators.js";
-var l = Object.defineProperty, m = (s, t, o, i) => {
-  for (var e = void 0, r = s.length - 1, p; r >= 0; r--)
-    (p = s[r]) && (e = p(t, o, e) || e);
-  return e && l(t, o, e), e;
+import { LitElement as l, html as a } from "lit";
+import { property as n } from "lit/decorators.js";
+var m = Object.defineProperty, c = (k, t, i, r) => {
+  for (var e = void 0, s = k.length - 1, o; s >= 0; s--)
+    (o = k[s]) && (e = o(t, i, e) || e);
+  return e && m(t, i, e), e;
 };
-class a extends n {
+class d extends l {
   createRenderRoot() {
     return this;
   }
+  get username() {
+    var t;
+    return (((t = this.config) == null ? void 0 : t.tiktok_access_token) || "").replace("@", "").trim();
+  }
+  processTikTokEmbed() {
+    var t, i, r, e, s, o, p;
+    (r = (i = (t = window.tiktok) == null ? void 0 : t.Embeds) == null ? void 0 : i.process) == null || r.call(i), (s = (e = window.TTEmbed) == null ? void 0 : e.loadEmbeds) == null || s.call(e), (p = (o = window.tiktokEmbed) == null ? void 0 : o.loadEmbeds) == null || p.call(o);
+  }
   loadTikTokScript() {
-    var o;
-    if ((o = window.tiktok) != null && o.Embeds) {
-      window.tiktok.Embeds.process();
-      return;
-    }
     if (document.querySelector('script[src="https://www.tiktok.com/embed.js"]')) {
-      setTimeout(() => {
-        var i, e;
-        return (e = (i = window.tiktok) == null ? void 0 : i.Embeds) == null ? void 0 : e.process();
-      }, 700);
+      this.processTikTokEmbed();
       return;
     }
     const t = document.createElement("script");
     t.src = "https://www.tiktok.com/embed.js", t.async = !0, t.onload = () => {
-      setTimeout(() => {
-        var i, e;
-        return (e = (i = window.tiktok) == null ? void 0 : i.Embeds) == null ? void 0 : e.process();
-      }, 500);
+      this.processTikTokEmbed();
     }, document.body.appendChild(t);
   }
-  firstUpdated() {
-    this.loadTikTokScript();
+  async firstUpdated() {
+    await this.updateComplete, requestAnimationFrame(() => {
+      this.loadTikTokScript();
+    });
   }
   updated(t) {
-    t.has("config") && setTimeout(() => {
-      var o, i;
-      (i = (o = window.tiktok) == null ? void 0 : o.Embeds) == null || i.process();
-    }, 700);
-  }
-  get username() {
-    var t;
-    return (((t = this.config) == null ? void 0 : t.tiktok_username) || "").replace("@", "").trim();
+    t.has("config") && requestAnimationFrame(() => {
+      this.processTikTokEmbed();
+    });
   }
   render() {
-    var o, i, e, r;
+    var i, r;
     const t = this.username;
-    return k`
+    return a`
       <style>
         .tiktok-profile {
-          margin: 32px 0;
+          max-width: 990px;
+          margin: 0 auto;
+          padding: 20px 16px;
         }
 
-        .tiktok-profile__container {
-          max-width: 1440px;
-          margin: 0 auto;
-          padding: 0 16px;
+        .tiktok-profile__card {
+          overflow: hidden;
+          width: 100%;
         }
 
         .tiktok-profile__header {
+          margin-bottom: 20px;
           text-align: center;
-          margin-bottom: 24px;
         }
 
         .tiktok-profile__title {
-          font-size: 20px;
-          font-weight: 700;
+          font-size: 18px;
+          font-weight: bold;
           margin-bottom: 8px;
           color: #000;
         }
@@ -75,21 +70,11 @@ class a extends n {
           color: #777;
         }
 
-        .tiktok-profile__embed-wrapper {
-          width: 75%;
-          margin: 0 auto;
-        }
-
-        @media (min-width: 768px) {
-          .tiktok-profile__embed-wrapper {
-            width: 33.333%;
-          }
-        }
-
         .tiktok-profile__embed {
+          margin: 0 auto;
+          width: 100%;
           max-width: 780px;
           min-width: 288px;
-          margin: 0 auto;
         }
 
         .tiktok-profile__embed iframe {
@@ -114,37 +99,33 @@ class a extends n {
       </style>
 
       <section class="tiktok-profile">
-        <div class="tiktok-profile__container">
+        <div class="tiktok-profile__card">
 
-          ${(o = this.config) != null && o.tiktok_title || (i = this.config) != null && i.tiktok_subtitle ? k`
-                <div class="tiktok-profile__header">
-                  ${(e = this.config) != null && e.tiktok_title ? k`
-                        <h3 class="tiktok-profile__title">
-                          ${this.config.tiktok_title}
-                        </h3>
-                      ` : ""}
+          <div class="tiktok-profile__header">
+            ${(i = this.config) != null && i.tiktok_title ? a`
+                  <h3 class="tiktok-profile__title">
+                    ${this.config.tiktok_title}
+                  </h3>
+                ` : ""}
 
-                  ${(r = this.config) != null && r.tiktok_subtitle ? k`
-                        <p class="tiktok-profile__subtitle">
-                          ${this.config.tiktok_subtitle}
-                        </p>
-                      ` : ""}
-                </div>
-              ` : ""}
+            ${(r = this.config) != null && r.tiktok_subtitle ? a`
+                  <p class="tiktok-profile__subtitle">
+                    ${this.config.tiktok_subtitle}
+                  </p>
+                ` : ""}
+          </div>
 
-          ${t ? k`
-                <div class="tiktok-profile__embed-wrapper">
-                  <blockquote
-                    class="tiktok-embed tiktok-profile__embed"
-                    cite="https://www.tiktok.com/@${t}"
-                    data-unique-id="${t}"
-                    data-embed-from="oembed"
-                    data-embed-type="creator"
-                  >
-                    <section></section>
-                  </blockquote>
-                </div>
-              ` : k`
+          ${t ? a`
+                <blockquote
+                  class="tiktok-embed tiktok-profile__embed"
+                  cite="https://www.tiktok.com/@${t}"
+                  data-unique-id="${t}"
+                  data-embed-from="oembed"
+                  data-embed-type="creator"
+                >
+                  <section></section>
+                </blockquote>
+              ` : a`
                 <p class="tiktok-profile__empty">
                   يرجى إدخال اسم المستخدم
                 </p>
@@ -155,10 +136,10 @@ class a extends n {
     `;
   }
 }
-m([
-  d({ type: Object })
-], a.prototype, "config");
-typeof a < "u" && a.registerSallaComponent("salla-tiktok-profile");
+c([
+  n({ type: Object })
+], d.prototype, "config");
+typeof d < "u" && d.registerSallaComponent("salla-tiktok-profile");
 export {
-  a as default
+  d as default
 };

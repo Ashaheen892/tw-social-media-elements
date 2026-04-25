@@ -59,10 +59,6 @@ export default class InstagramProfile extends LitElement {
         }
 
         .instagram-profile__card {
-          background: #fff;
-          padding: 16px;
-          border-radius: 12px;
-          box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
           overflow: hidden;
           width: 100%;
         }
@@ -95,11 +91,6 @@ export default class InstagramProfile extends LitElement {
         }
 
         /* ================= DARK MODE ================= */
-
-        [data-theme="dark"] .instagram-profile__card {
-          background: #1a1a1a;
-          box-shadow: 0 4px 20px rgba(0, 0, 0, 0.35);
-        }
 
         [data-theme="dark"] .instagram-profile__title {
           color: #fff;

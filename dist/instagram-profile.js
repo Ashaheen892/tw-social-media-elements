@@ -1,11 +1,11 @@
-import { LitElement as d, html as a } from "lit";
+import { LitElement as l, html as i } from "lit";
 import { property as p } from "lit/decorators.js";
-var l = Object.defineProperty, g = (i, t, e, s) => {
-  for (var r = void 0, o = i.length - 1, m; o >= 0; o--)
-    (m = i[o]) && (r = m(t, e, r) || r);
-  return r && l(t, e, r), r;
+var d = Object.defineProperty, c = (a, t, e, s) => {
+  for (var r = void 0, n = a.length - 1, m; n >= 0; n--)
+    (m = a[n]) && (r = m(t, e, r) || r);
+  return r && d(t, e, r), r;
 };
-class n extends d {
+class o extends l {
   createRenderRoot() {
     return this;
   }
@@ -43,7 +43,7 @@ class n extends d {
   render() {
     var e, s;
     const t = this.username;
-    return a`
+    return i`
       <style>
         .instagram-profile {
           max-width: 990px;
@@ -52,10 +52,6 @@ class n extends d {
         }
 
         .instagram-profile__card {
-          background: #fff;
-          padding: 16px;
-          border-radius: 12px;
-          box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
           overflow: hidden;
           width: 100%;
         }
@@ -89,11 +85,6 @@ class n extends d {
 
         /* ================= DARK MODE ================= */
 
-        [data-theme="dark"] .instagram-profile__card {
-          background: #1a1a1a;
-          box-shadow: 0 4px 20px rgba(0, 0, 0, 0.35);
-        }
-
         [data-theme="dark"] .instagram-profile__title {
           color: #fff;
         }
@@ -108,26 +99,26 @@ class n extends d {
         <div class="instagram-profile__card">
 
           <div class="instagram-profile__header">
-            ${(e = this.config) != null && e.instagram_title ? a`
+            ${(e = this.config) != null && e.instagram_title ? i`
                   <h3 class="instagram-profile__title">
                     ${this.config.instagram_title}
                   </h3>
                 ` : ""}
 
-            ${(s = this.config) != null && s.instagram_subtitle ? a`
+            ${(s = this.config) != null && s.instagram_subtitle ? i`
                   <p class="instagram-profile__subtitle">
                     ${this.config.instagram_subtitle}
                   </p>
                 ` : ""}
           </div>
 
-          ${t ? a`
+          ${t ? i`
                 <blockquote
                   class="instagram-media instagram-profile__embed"
                   data-instgrm-permalink="https://www.instagram.com/${t}"
                   data-instgrm-version="14"
                 ></blockquote>
-              ` : a`
+              ` : i`
                 <p class="instagram-profile__empty">
                   يرجى إدخال اسم المستخدم
                 </p>
@@ -137,10 +128,10 @@ class n extends d {
     `;
   }
 }
-g([
+c([
   p({ type: Object })
-], n.prototype, "config");
-typeof n < "u" && n.registerSallaComponent("salla-instagram-profile");
+], o.prototype, "config");
+typeof o < "u" && o.registerSallaComponent("salla-instagram-profile");
 export {
-  n as default
+  o as default
 };
