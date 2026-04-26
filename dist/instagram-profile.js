@@ -1,9 +1,10 @@
 import { LitElement as l, html as i } from "lit";
 import { property as p } from "lit/decorators.js";
-var d = Object.defineProperty, c = (a, t, e, s) => {
+import { t as d } from "./i18n-CYKsEwim.js";
+var c = Object.defineProperty, g = (a, t, e, s) => {
   for (var r = void 0, n = a.length - 1, m; n >= 0; n--)
     (m = a[n]) && (r = m(t, e, r) || r);
-  return r && d(t, e, r), r;
+  return r && c(t, e, r), r;
 };
 class o extends l {
   createRenderRoot() {
@@ -120,7 +121,7 @@ class o extends l {
                 ></blockquote>
               ` : i`
                 <p class="instagram-profile__empty">
-                  يرجى إدخال اسم المستخدم
+                  ${d("enterUsername")}
                 </p>
               `}
         </div>
@@ -128,7 +129,7 @@ class o extends l {
     `;
   }
 }
-c([
+g([
   p({ type: Object })
 ], o.prototype, "config");
 typeof o < "u" && o.registerSallaComponent("salla-instagram-profile");

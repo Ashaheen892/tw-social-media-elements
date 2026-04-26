@@ -1,5 +1,6 @@
 import { html, LitElement } from 'lit';
 import { property } from 'lit/decorators.js';
+import { t } from '../../utils/i18n';
 
 export default class TikTokProfile extends LitElement {
   @property({ type: Object })
@@ -187,7 +188,7 @@ export default class TikTokProfile extends LitElement {
                 `
               : html`
                   <p class="tiktok-profile__empty">
-                    يرجى إدخال اسم المستخدم
+                    ${t('enterUsername')}
                   </p>
                 `
           }

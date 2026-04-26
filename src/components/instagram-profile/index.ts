@@ -1,5 +1,6 @@
 import { html, LitElement } from 'lit';
 import { property } from 'lit/decorators.js';
+import { t } from '../../utils/i18n';
 
 export default class InstagramProfile extends LitElement {
   @property({ type: Object })
@@ -138,7 +139,7 @@ export default class InstagramProfile extends LitElement {
               `
               : html`
                 <p class="instagram-profile__empty">
-                  يرجى إدخال اسم المستخدم
+                  ${t('enterUsername')}
                 </p>
               `
           }

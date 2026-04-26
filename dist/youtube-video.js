@@ -1,9 +1,10 @@
 import { LitElement as s, html as r } from "lit";
 import { property as n } from "lit/decorators.js";
-var b = Object.defineProperty, c = (u, e, t, i) => {
+import { t as b } from "./i18n-CYKsEwim.js";
+var c = Object.defineProperty, p = (u, e, t, i) => {
   for (var o = void 0, d = u.length - 1, a; d >= 0; d--)
     (a = u[d]) && (o = a(e, t, o) || o);
-  return o && b(e, t, o), o;
+  return o && c(e, t, o), o;
 };
 class l extends s {
   createRenderRoot() {
@@ -110,9 +111,9 @@ class l extends s {
                     ></iframe>
                   </div>
                 ` : r`
-                  <p class="youtube-video__empty">
-                    يرجى إدخال رابط فيديو يوتيوب صحيح
-                  </p>
+                <p class="youtube-video__empty">
+                  ${b("invalidYoutubeUrl")}
+                </p>    
                 `}
 
         </div>
@@ -120,7 +121,7 @@ class l extends s {
     `;
   }
 }
-c([
+p([
   n({ type: Object })
 ], l.prototype, "config");
 typeof l < "u" && l.registerSallaComponent("salla-youtube-video");

@@ -1,5 +1,6 @@
 import { html, LitElement } from 'lit';
 import { property } from 'lit/decorators.js';
+import { t } from '../../utils/i18n';
 
 export default class WhatsAppCTA extends LitElement {
   @property({ type: Object })
@@ -130,7 +131,7 @@ export default class WhatsAppCTA extends LitElement {
               color:${buttonTextColor};
             "
           >
-            ${this.config?.whatsapp_button_text || 'تواصل الآن'}
+            ${this.config?.whatsapp_button_text || t('contactNow')}
           </a>
         </div>
       </section>

@@ -1,9 +1,10 @@
-import { LitElement as w, html as n } from "lit";
+import { LitElement as w, html as s } from "lit";
 import { property as f } from "lit/decorators.js";
-var d = Object.defineProperty, g = (s, a, p, r) => {
-  for (var t = void 0, e = s.length - 1, o; e >= 0; e--)
-    (o = s[e]) && (t = o(a, p, t) || t);
-  return t && d(a, p, t), t;
+import { t as d } from "./i18n-CYKsEwim.js";
+var g = Object.defineProperty, u = (n, a, p, r) => {
+  for (var t = void 0, e = n.length - 1, o; e >= 0; e--)
+    (o = n[e]) && (t = o(a, p, t) || t);
+  return t && g(a, p, t), t;
 };
 class i extends w {
   createRenderRoot() {
@@ -15,9 +16,9 @@ class i extends w {
     return a ? `https://wa.me/${a}` : "#";
   }
   render() {
-    var e, o, h, c, l, _, x;
-    const a = ((e = this.config) == null ? void 0 : e.whatsapp_bg_color) || "#25D366", p = ((o = this.config) == null ? void 0 : o.whatsapp_text_color) || "#FFFFFF", r = ((h = this.config) == null ? void 0 : h.whatsapp_button_color) || "#FFFFFF", t = ((c = this.config) == null ? void 0 : c.whatsapp_button_text_color) || "#25D366";
-    return n`
+    var e, o, c, h, l, _, x;
+    const a = ((e = this.config) == null ? void 0 : e.whatsapp_bg_color) || "#25D366", p = ((o = this.config) == null ? void 0 : o.whatsapp_text_color) || "#FFFFFF", r = ((c = this.config) == null ? void 0 : c.whatsapp_button_color) || "#FFFFFF", t = ((h = this.config) == null ? void 0 : h.whatsapp_button_text_color) || "#25D366";
+    return s`
       <style>
         .whatsapp-cta {
           margin: 32px auto;
@@ -94,13 +95,13 @@ class i extends w {
             color:${p};
           "
         >
-          ${(l = this.config) != null && l.whatsapp_title ? n`
+          ${(l = this.config) != null && l.whatsapp_title ? s`
                   <h2 class="whatsapp-cta__title">
                     ${this.config.whatsapp_title}
                   </h2>
                 ` : ""}
 
-          ${(_ = this.config) != null && _.whatsapp_text ? n`
+          ${(_ = this.config) != null && _.whatsapp_text ? s`
                   <p class="whatsapp-cta__text">
                     ${this.config.whatsapp_text}
                   </p>
@@ -116,14 +117,14 @@ class i extends w {
               color:${t};
             "
           >
-            ${((x = this.config) == null ? void 0 : x.whatsapp_button_text) || "تواصل الآن"}
+            ${((x = this.config) == null ? void 0 : x.whatsapp_button_text) || d("contactNow")}
           </a>
         </div>
       </section>
     `;
   }
 }
-g([
+u([
   f({ type: Object })
 ], i.prototype, "config");
 typeof i < "u" && i.registerSallaComponent("salla-whatsapp-cta");

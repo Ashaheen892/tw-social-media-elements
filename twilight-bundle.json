@@ -255,7 +255,8 @@
           "label": "رابط فيديو يوتيوب",
           "id": "youtube_video_url",
           "placeholder": "https://youtube.com/watch?v=...",
-          "format": "text"
+          "format": "text",
+          "value": "https://www.youtube.com/watch?v=YpmvWkQ2BT0&list=TLGGHYBkGF56fQgwMjAzMjAyNg"
         }
       ]
     }

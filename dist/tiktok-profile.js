@@ -1,11 +1,12 @@
-import { LitElement as n, html as a } from "lit";
+import { LitElement as k, html as a } from "lit";
 import { property as d } from "lit/decorators.js";
-var c = Object.defineProperty, p = (l, t, e, o) => {
+import { t as c } from "./i18n-CYKsEwim.js";
+var p = Object.defineProperty, f = (l, t, e, o) => {
   for (var i = void 0, r = l.length - 1, s; r >= 0; r--)
     (s = l[r]) && (i = s(t, e, i) || i);
-  return i && c(t, e, i), i;
+  return i && p(t, e, i), i;
 };
-class k extends n {
+class n extends k {
   createRenderRoot() {
     return this;
   }
@@ -143,7 +144,7 @@ class k extends n {
                   </blockquote>
                 ` : a`
                   <p class="tiktok-profile__empty">
-                    يرجى إدخال اسم المستخدم
+                    ${c("enterUsername")}
                   </p>
                 `}
 
@@ -152,10 +153,10 @@ class k extends n {
     `;
   }
 }
-p([
+f([
   d({ type: Object })
-], k.prototype, "config");
-typeof k < "u" && k.registerSallaComponent("salla-tiktok-profile");
+], n.prototype, "config");
+typeof n < "u" && n.registerSallaComponent("salla-tiktok-profile");
 export {
-  k as default
+  n as default
 };

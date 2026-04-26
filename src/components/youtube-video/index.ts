@@ -1,6 +1,6 @@
 import { html, LitElement } from 'lit';
 import { property } from 'lit/decorators.js';
-
+import { t } from '../../utils/i18n';
 export default class YoutubeVideo extends LitElement {
   @property({ type: Object })
   config?: Record<string, any>;
@@ -141,9 +141,9 @@ export default class YoutubeVideo extends LitElement {
                   </div>
                 `
               : html`
-                  <p class="youtube-video__empty">
-                    يرجى إدخال رابط فيديو يوتيوب صحيح
-                  </p>
+                <p class="youtube-video__empty">
+                  ${t('invalidYoutubeUrl')}
+                </p>    
                 `
           }
 
