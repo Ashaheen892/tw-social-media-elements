@@ -18,7 +18,6 @@
       "name": "instagram-profile",
       "image": "https://cdn.imgchest.com/files/26f2850a1eb5.jpg",
       "preview_image": "https://cdn.imgchest.com/files/26f2850a1eb5.jpg",
-      "is_default": true,
       "fields": [
         {
           "type": "static",
@@ -80,9 +79,8 @@
       "title": "ملف التيك توك",
       "icon": "sicon-tiktok",
       "name": "tiktok-profile",
-      "image": "https://cdn.imgchest.com/files/26f2850a1eb5.jpg",
-      "preview_image": "https://cdn.imgchest.com/files/26f2850a1eb5.jpg",
-      "is_default": true,
+      "image": "https://cdn.imgchest.com/files/2eb0a3f4da68.jpg",
+      "preview_image": "https://cdn.imgchest.com/files/2eb0a3f4da68.jpg",
       "fields": [
         {
           "type": "static",
