@@ -136,6 +136,128 @@
           "maxLength": 500
         }
       ]
+    },
+    {
+      "key": "6f5c1c9f-8a72-4a2b-92a4-whatsappcta001",
+      "title": "دعوة واتساب",
+      "icon": "sicon-whatsapp",
+      "name": "whatsapp-cta",
+      "image": "https://cdn.imgchest.com/files/6b9574071b88.jpg",
+      "preview_image": "https://cdn.imgchest.com/files/6b9574071b88.jpg",
+      "fields": [
+        {
+          "type": "string",
+          "label": "العنوان الرئيسي",
+          "id": "whatsapp_title",
+          "format": "text",
+          "value": "تواصل معنا عبر واتساب",
+          "multilanguage": true,
+          "key": "38311e88-fadf-4de4-8aef-8198183bc830"
+        },
+        {
+          "type": "string",
+          "label": "الوصف",
+          "id": "whatsapp_text",
+          "format": "textarea",
+          "value": "فريقنا جاهز للرد على جميع استفساراتك بسرعة عبر واتساب",
+          "multilanguage": true,
+          "key": "818dc2dd-3eb9-48c4-a96b-09b9eed77a61"
+        },
+        {
+          "type": "string",
+          "label": "رقم الواتساب",
+          "id": "whatsapp_number",
+          "format": "text",
+          "placeholder": "9665XXXXXXXX",
+          "value": "",
+          "key": "129b45c6-899d-4984-8928-c591bb29ac16"
+        },
+        {
+          "type": "string",
+          "label": "نص الزر",
+          "id": "whatsapp_button_text",
+          "format": "text",
+          "value": "تواصل الآن",
+          "multilanguage": true,
+          "key": "34686014-9324-4709-a886-a436313b532c"
+        },
+        {
+          "type": "string",
+          "icon": "sicon-toggle-off",
+          "label": "لون الخلفية",
+          "id": "whatsapp_bg_color",
+          "format": "color",
+          "required": false,
+          "value": "#25D366",
+          "key": "702c53ce-f216-448c-bd53-e19900738a48"
+        },
+        {
+          "type": "string",
+          "icon": "sicon-toggle-off",
+          "label": "لون النصوص",
+          "id": "whatsapp_text_color",
+          "format": "color",
+          "required": false,
+          "value": "#FFFFFF",
+          "key": "9004331a-1e30-4813-944f-05c2e4702aed"
+        },
+        {
+          "type": "string",
+          "icon": "sicon-toggle-off",
+          "label": "لون الزر",
+          "id": "whatsapp_button_color",
+          "format": "color",
+          "required": false,
+          "value": "#FFFFFF",
+          "key": "54a1428f-5302-4d75-bae1-8bb72ab453bd"
+        },
+        {
+          "type": "string",
+          "icon": "sicon-toggle-off",
+          "label": "لون نص الزر",
+          "id": "whatsapp_button_text_color",
+          "format": "color",
+          "required": false,
+          "value": "#25D366",
+          "key": "439eaa4e-734c-4cc6-85d4-833948a7f65a"
+        }
+      ]
+    },
+    {
+      "key": "97bf136b-e2f0-4a2e-a159-f11558ea02c6",
+      "title": "فيديو يوتيوب",
+      "icon": "sicon-play-circle",
+      "name": "youtube-video",
+      "image": "https://cdn.imgchest.com/files/8c0059277643.jpg",
+      "preview_image": "https://cdn.imgchest.com/files/8c0059277643.jpg",
+      "fields": [
+        {
+          "type": "string",
+          "icon": "sicon-format-text-alt",
+          "label": "العنوان الرئيسي",
+          "multilanguage": true,
+          "id": "youtube_title",
+          "value": "شاهد الفيديو",
+          "format": "text"
+        },
+        {
+          "type": "string",
+          "icon": "sicon-typography",
+          "label": "العنوان الفرعي",
+          "multilanguage": true,
+          "id": "youtube_subtitle",
+          "value": "تعرف أكثر من خلال هذا الفيديو",
+          "format": "textarea"
+        },
+        {
+          "type": "string",
+          "icon": "sicon-link",
+          "label": "رابط فيديو يوتيوب",
+          "id": "youtube_video_url",
+          "placeholder": "https://youtube.com/watch?v=...",
+          "format": "text"
+        }
+      ]
     }
   ]
 }
