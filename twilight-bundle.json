@@ -1,263 +1,263 @@
 {
-  "name": {
-    "ar": "\u0639\u0646\u0627\u0635\u0631 \u0627\u0644\u0633\u0648\u0634\u064a\u0627\u0644 \u0645\u064a\u062f\u064a\u0627",
-    "en": "Social Media Elements"
-  },
-  "description": {
-    "ar": "",
-    "en": ""
-  },
-  "author_email": "sajispprt@gmail.com",
-  "support_url": "",
-  "repository": "https://github.com/Ashaheen892/tw-social-media-elements",
-  "components": [
-    {
-      "key": "67642c5d-3927-43c2-b55e-f48f347d1398",
-      "title": "ملف انستقرام",
-      "icon": "sicon-instagram2",
-      "name": "instagram-profile",
-      "image": "https://cdn.imgchest.com/files/26f2850a1eb5.jpg",
-      "preview_image": "https://cdn.imgchest.com/files/26f2850a1eb5.jpg",
-      "fields": [
-        {
-          "type": "static",
-          "format": "description",
-          "id": "salla-pro-glopal",
-          "value": "<div><a href='https://mtjr.at/SfoXlntisG' target='_blank'><div class='flex flex-row overflow-x-hidden p-2 relative rounded items-center' style='gap: 15px; border: dashed; margin-top: 30px; margin-bottom: 30px;'><img src='https://cdn.salla.sa/apgtHqm6EDSvTpQ4m3xmSUhv9pyvI2J4Z8iqaF1E.png' style='width: 25%;'> <div class='flex flex-col p-2' style='color:#21636d;'><strong class='text-lg mt-1 mb-3'>احصل على خصم 30%</strong><strong class='mt-1 mb-3 text-sm'> اضغط للتجديد السنوي لباقات سلة برو او بلس بكود خصم ( F-ZJYWQ1TF ) </strong></div></div></a></div>"
-        },
-        {
-          "type": "string",
-          "icon": "sicon-format-text-alt",
-          "label": "العنوان الرئيسي",
-          "multilanguage": true,
-          "id": "instagram_title",
-          "value": "تابعنا على انستقرام",
-          "required": false,
-          "format": "text",
-          "description": null,
-          "placeholder": "أدخل العنوان هنا...",
-          "minLength": 0,
-          "maxLength": 100,
-          "key": "bfe7aaac-09c4-4c0d-b442-63ce665e7b20"
-        },
-        {
-          "id": "instagram_subtitle",
-          "key": "55c193ab-1a91-4c48-b3c2-1cc25360f447",
-          "type": "string",
-          "format": "textarea",
-          "label": "العنوان فرعي",
-          "description": null,
-          "labelHTML": null,
-          "placeholder": "أدخل العنوان الفرعي هنا...",
-          "icon": "sicon-typography",
-          "value": null,
-          "multilanguage": true,
-          "required": false,
-          "minLength": 0,
-          "maxLength": 300
-        },
-        {
-          "id": "access_token",
-          "key": "1054b09f-f72f-4e20-943b-f62a7e974d02",
-          "type": "string",
-          "format": "text",
-          "label": "ادخل اسم المستخدم (username)",
-          "description": null,
-          "labelHTML": null,
-          "placeholder": "username",
-          "icon": "sicon-format-text-alt",
-          "value": "sallaapp",
-          "multilanguage": false,
-          "required": false,
-          "minLength": 0,
-          "maxLength": 500
-        }
-      ]
+    "name": {
+        "ar": "عناصر السوشيال ميديا",
+        "en": "Social Media Elements"
     },
-    {
-      "key": "6e165848-7301-4ef5-a81d-1d2a0c5f8b94",
-      "title": "ملف التيك توك",
-      "icon": "sicon-tiktok",
-      "name": "tiktok-profile",
-      "image": "https://cdn.imgchest.com/files/2eb0a3f4da68.jpg",
-      "preview_image": "https://cdn.imgchest.com/files/2eb0a3f4da68.jpg",
-      "fields": [
-        {
-          "type": "static",
-          "format": "description",
-          "id": "salla-pro-glopal",
-          "value": "<div><a href='https://mtjr.at/SfoXlntisG' target='_blank'><div class='flex flex-row overflow-x-hidden p-2 relative rounded items-center' style='gap: 15px; border: dashed; margin-top: 30px; margin-bottom: 30px;'><img src='https://cdn.salla.sa/apgtHqm6EDSvTpQ4m3xmSUhv9pyvI2J4Z8iqaF1E.png' style='width: 25%;'> <div class='flex flex-col p-2' style='color:#21636d;'><strong class='text-lg mt-1 mb-3'>احصل على خصم 30%</strong><strong class='mt-1 mb-3 text-sm'> اضغط للتجديد السنوي لباقات سلة برو او بلس بكود خصم ( F-ZJYWQ1TF ) </strong></div></div></a></div>"
-        },
-        {
-          "type": "string",
-          "icon": "sicon-format-text-alt",
-          "label": "العنوان الرئيسي",
-          "multilanguage": true,
-          "id": "tiktok_title",
-          "value": "تابعنا على التيك توك",
-          "required": false,
-          "format": "text",
-          "description": null,
-          "placeholder": "أدخل العنوان هنا...",
-          "minLength": 0,
-          "maxLength": 100,
-          "key": "bf307b23-d566-4079-a5bf-c0173caa3c86"
-        },
-        {
-          "id": "tiktok_subtitle",
-          "key": "350e4ad9-020a-4ebe-9a5c-91275e44cd56",
-          "type": "string",
-          "format": "textarea",
-          "label": "العنوان فرعي",
-          "description": null,
-          "labelHTML": null,
-          "placeholder": "أدخل العنوان الفرعي هنا...",
-          "icon": "sicon-typography",
-          "value": null,
-          "multilanguage": true,
-          "required": false,
-          "minLength": 0,
-          "maxLength": 300
-        },
-        {
-          "id": "tiktok_access_token",
-          "key": "8d0adb1d-d038-4bfd-bf60-d0235ce6ad5c",
-          "type": "string",
-          "format": "text",
-          "label": "ادخل اسم المستخدم (username)",
-          "description": null,
-          "labelHTML": null,
-          "placeholder": "username",
-          "icon": "sicon-format-text-alt",
-          "value": "sallaapp",
-          "multilanguage": false,
-          "required": false,
-          "minLength": 0,
-          "maxLength": 500
-        }
-      ]
+    "description": {
+        "ar": null,
+        "en": null
     },
-    {
-      "key": "6f5c1c9f-8a72-4a2b-92a4-whatsappcta001",
-      "title": "دعوة واتساب",
-      "icon": "sicon-whatsapp",
-      "name": "whatsapp-cta",
-      "image": "https://cdn.imgchest.com/files/6b9574071b88.jpg",
-      "preview_image": "https://cdn.imgchest.com/files/6b9574071b88.jpg",
-      "fields": [
+    "author_email": "sajispprt@gmail.com",
+    "support_url": "https://x.com/theme_saji",
+    "repository": "https://github.com/Ashaheen892/tw-social-media-elements",
+    "components": [
         {
-          "type": "string",
-          "label": "العنوان الرئيسي",
-          "id": "whatsapp_title",
-          "format": "text",
-          "value": "تواصل معنا عبر واتساب",
-          "multilanguage": true,
-          "key": "38311e88-fadf-4de4-8aef-8198183bc830"
+            "key": "67642c5d-3927-43c2-b55e-f48f347d1398",
+            "title": "ملف انستقرام",
+            "icon": "sicon-instagram2",
+            "name": "instagram-profile",
+            "image": "https://cdn.imgchest.com/files/26f2850a1eb5.jpg",
+            "preview_image": "https://cdn.imgchest.com/files/26f2850a1eb5.jpg",
+            "fields": [
+                {
+                    "type": "static",
+                    "format": "description",
+                    "id": "salla-pro-glopal",
+                    "value": "<div><a href='https://mtjr.at/SfoXlntisG' target='_blank'><div class='flex flex-row overflow-x-hidden p-2 relative rounded items-center' style='gap: 15px; border: dashed; margin-top: 30px; margin-bottom: 30px;'><img src='https://cdn.salla.sa/apgtHqm6EDSvTpQ4m3xmSUhv9pyvI2J4Z8iqaF1E.png' style='width: 25%;'> <div class='flex flex-col p-2' style='color:#21636d;'><strong class='text-lg mt-1 mb-3'>احصل على خصم 30%</strong><strong class='mt-1 mb-3 text-sm'> اضغط للتجديد السنوي لباقات سلة برو او بلس بكود خصم ( F-ZJYWQ1TF ) </strong></div></div></a></div>"
+                },
+                {
+                    "type": "string",
+                    "icon": "sicon-format-text-alt",
+                    "label": "العنوان الرئيسي",
+                    "multilanguage": true,
+                    "id": "instagram_title",
+                    "value": "تابعنا على انستقرام",
+                    "required": false,
+                    "format": "text",
+                    "description": null,
+                    "placeholder": "أدخل العنوان هنا...",
+                    "minLength": 0,
+                    "maxLength": 100,
+                    "key": "bfe7aaac-09c4-4c0d-b442-63ce665e7b20"
+                },
+                {
+                    "id": "instagram_subtitle",
+                    "key": "55c193ab-1a91-4c48-b3c2-1cc25360f447",
+                    "type": "string",
+                    "format": "textarea",
+                    "label": "العنوان فرعي",
+                    "description": null,
+                    "labelHTML": null,
+                    "placeholder": "أدخل العنوان الفرعي هنا...",
+                    "icon": "sicon-typography",
+                    "value": null,
+                    "multilanguage": true,
+                    "required": false,
+                    "minLength": 0,
+                    "maxLength": 300
+                },
+                {
+                    "id": "access_token",
+                    "key": "1054b09f-f72f-4e20-943b-f62a7e974d02",
+                    "type": "string",
+                    "format": "text",
+                    "label": "ادخل اسم المستخدم (username)",
+                    "description": null,
+                    "labelHTML": null,
+                    "placeholder": "username",
+                    "icon": "sicon-format-text-alt",
+                    "value": "sallaapp",
+                    "multilanguage": false,
+                    "required": false,
+                    "minLength": 0,
+                    "maxLength": 500
+                }
+            ]
         },
         {
-          "type": "string",
-          "label": "الوصف",
-          "id": "whatsapp_text",
-          "format": "textarea",
-          "value": "فريقنا جاهز للرد على جميع استفساراتك بسرعة عبر واتساب",
-          "multilanguage": true,
-          "key": "818dc2dd-3eb9-48c4-a96b-09b9eed77a61"
+            "key": "6e165848-7301-4ef5-a81d-1d2a0c5f8b94",
+            "title": "ملف التيك توك",
+            "icon": "sicon-tiktok",
+            "name": "tiktok-profile",
+            "image": "https://cdn.imgchest.com/files/2eb0a3f4da68.jpg",
+            "preview_image": "https://cdn.imgchest.com/files/2eb0a3f4da68.jpg",
+            "fields": [
+                {
+                    "type": "static",
+                    "format": "description",
+                    "id": "salla-pro-glopal",
+                    "value": "<div><a href='https://mtjr.at/SfoXlntisG' target='_blank'><div class='flex flex-row overflow-x-hidden p-2 relative rounded items-center' style='gap: 15px; border: dashed; margin-top: 30px; margin-bottom: 30px;'><img src='https://cdn.salla.sa/apgtHqm6EDSvTpQ4m3xmSUhv9pyvI2J4Z8iqaF1E.png' style='width: 25%;'> <div class='flex flex-col p-2' style='color:#21636d;'><strong class='text-lg mt-1 mb-3'>احصل على خصم 30%</strong><strong class='mt-1 mb-3 text-sm'> اضغط للتجديد السنوي لباقات سلة برو او بلس بكود خصم ( F-ZJYWQ1TF ) </strong></div></div></a></div>"
+                },
+                {
+                    "type": "string",
+                    "icon": "sicon-format-text-alt",
+                    "label": "العنوان الرئيسي",
+                    "multilanguage": true,
+                    "id": "tiktok_title",
+                    "value": "تابعنا على التيك توك",
+                    "required": false,
+                    "format": "text",
+                    "description": null,
+                    "placeholder": "أدخل العنوان هنا...",
+                    "minLength": 0,
+                    "maxLength": 100,
+                    "key": "bf307b23-d566-4079-a5bf-c0173caa3c86"
+                },
+                {
+                    "id": "tiktok_subtitle",
+                    "key": "350e4ad9-020a-4ebe-9a5c-91275e44cd56",
+                    "type": "string",
+                    "format": "textarea",
+                    "label": "العنوان فرعي",
+                    "description": null,
+                    "labelHTML": null,
+                    "placeholder": "أدخل العنوان الفرعي هنا...",
+                    "icon": "sicon-typography",
+                    "value": null,
+                    "multilanguage": true,
+                    "required": false,
+                    "minLength": 0,
+                    "maxLength": 300
+                },
+                {
+                    "id": "tiktok_access_token",
+                    "key": "8d0adb1d-d038-4bfd-bf60-d0235ce6ad5c",
+                    "type": "string",
+                    "format": "text",
+                    "label": "ادخل اسم المستخدم (username)",
+                    "description": null,
+                    "labelHTML": null,
+                    "placeholder": "username",
+                    "icon": "sicon-format-text-alt",
+                    "value": "sallaapp",
+                    "multilanguage": false,
+                    "required": false,
+                    "minLength": 0,
+                    "maxLength": 500
+                }
+            ]
         },
         {
-          "type": "string",
-          "label": "رقم الواتساب",
-          "id": "whatsapp_number",
-          "format": "text",
-          "placeholder": "9665XXXXXXXX",
-          "value": "",
-          "key": "129b45c6-899d-4984-8928-c591bb29ac16"
+            "key": "6f5c1c9f-8a72-4a2b-92a4-whatsappcta001",
+            "title": "دعوة واتساب",
+            "icon": "sicon-whatsapp",
+            "name": "whatsapp-cta",
+            "image": "https://cdn.imgchest.com/files/6b9574071b88.jpg",
+            "preview_image": "https://cdn.imgchest.com/files/6b9574071b88.jpg",
+            "fields": [
+                {
+                    "type": "string",
+                    "label": "العنوان الرئيسي",
+                    "id": "whatsapp_title",
+                    "format": "text",
+                    "value": "تواصل معنا عبر واتساب",
+                    "multilanguage": true,
+                    "key": "38311e88-fadf-4de4-8aef-8198183bc830"
+                },
+                {
+                    "type": "string",
+                    "label": "الوصف",
+                    "id": "whatsapp_text",
+                    "format": "textarea",
+                    "value": "فريقنا جاهز للرد على جميع استفساراتك بسرعة عبر واتساب",
+                    "multilanguage": true,
+                    "key": "818dc2dd-3eb9-48c4-a96b-09b9eed77a61"
+                },
+                {
+                    "type": "string",
+                    "label": "رقم الواتساب",
+                    "id": "whatsapp_number",
+                    "format": "text",
+                    "placeholder": "9665XXXXXXXX",
+                    "value": "",
+                    "key": "129b45c6-899d-4984-8928-c591bb29ac16"
+                },
+                {
+                    "type": "string",
+                    "label": "نص الزر",
+                    "id": "whatsapp_button_text",
+                    "format": "text",
+                    "value": "تواصل الآن",
+                    "multilanguage": true,
+                    "key": "34686014-9324-4709-a886-a436313b532c"
+                },
+                {
+                    "type": "string",
+                    "icon": "sicon-toggle-off",
+                    "label": "لون الخلفية",
+                    "id": "whatsapp_bg_color",
+                    "format": "color",
+                    "required": false,
+                    "value": "#25D366",
+                    "key": "702c53ce-f216-448c-bd53-e19900738a48"
+                },
+                {
+                    "type": "string",
+                    "icon": "sicon-toggle-off",
+                    "label": "لون النصوص",
+                    "id": "whatsapp_text_color",
+                    "format": "color",
+                    "required": false,
+                    "value": "#FFFFFF",
+                    "key": "9004331a-1e30-4813-944f-05c2e4702aed"
+                },
+                {
+                    "type": "string",
+                    "icon": "sicon-toggle-off",
+                    "label": "لون الزر",
+                    "id": "whatsapp_button_color",
+                    "format": "color",
+                    "required": false,
+                    "value": "#FFFFFF",
+                    "key": "54a1428f-5302-4d75-bae1-8bb72ab453bd"
+                },
+                {
+                    "type": "string",
+                    "icon": "sicon-toggle-off",
+                    "label": "لون نص الزر",
+                    "id": "whatsapp_button_text_color",
+                    "format": "color",
+                    "required": false,
+                    "value": "#25D366",
+                    "key": "439eaa4e-734c-4cc6-85d4-833948a7f65a"
+                }
+            ]
         },
         {
-          "type": "string",
-          "label": "نص الزر",
-          "id": "whatsapp_button_text",
-          "format": "text",
-          "value": "تواصل الآن",
-          "multilanguage": true,
-          "key": "34686014-9324-4709-a886-a436313b532c"
-        },
-        {
-          "type": "string",
-          "icon": "sicon-toggle-off",
-          "label": "لون الخلفية",
-          "id": "whatsapp_bg_color",
-          "format": "color",
-          "required": false,
-          "value": "#25D366",
-          "key": "702c53ce-f216-448c-bd53-e19900738a48"
-        },
-        {
-          "type": "string",
-          "icon": "sicon-toggle-off",
-          "label": "لون النصوص",
-          "id": "whatsapp_text_color",
-          "format": "color",
-          "required": false,
-          "value": "#FFFFFF",
-          "key": "9004331a-1e30-4813-944f-05c2e4702aed"
-        },
-        {
-          "type": "string",
-          "icon": "sicon-toggle-off",
-          "label": "لون الزر",
-          "id": "whatsapp_button_color",
-          "format": "color",
-          "required": false,
-          "value": "#FFFFFF",
-          "key": "54a1428f-5302-4d75-bae1-8bb72ab453bd"
-        },
-        {
-          "type": "string",
-          "icon": "sicon-toggle-off",
-          "label": "لون نص الزر",
-          "id": "whatsapp_button_text_color",
-          "format": "color",
-          "required": false,
-          "value": "#25D366",
-          "key": "439eaa4e-734c-4cc6-85d4-833948a7f65a"
+            "key": "97bf136b-e2f0-4a2e-a159-f11558ea02c6",
+            "title": "فيديو يوتيوب",
+            "icon": "sicon-play-circle",
+            "name": "youtube-video",
+            "image": "https://cdn.imgchest.com/files/8c0059277643.jpg",
+            "preview_image": "https://cdn.imgchest.com/files/8c0059277643.jpg",
+            "fields": [
+                {
+                    "type": "string",
+                    "icon": "sicon-format-text-alt",
+                    "label": "العنوان الرئيسي",
+                    "multilanguage": true,
+                    "id": "youtube_title",
+                    "value": "شاهد الفيديو",
+                    "format": "text"
+                },
+                {
+                    "type": "string",
+                    "icon": "sicon-typography",
+                    "label": "العنوان الفرعي",
+                    "multilanguage": true,
+                    "id": "youtube_subtitle",
+                    "value": "تعرف أكثر من خلال هذا الفيديو",
+                    "format": "textarea"
+                },
+                {
+                    "type": "string",
+                    "icon": "sicon-link",
+                    "label": "رابط فيديو يوتيوب",
+                    "id": "youtube_video_url",
+                    "placeholder": "https://youtube.com/watch?v=...",
+                    "format": "text"
+                }
+            ]
         }
-      ]
-    },
-    {
-      "key": "97bf136b-e2f0-4a2e-a159-f11558ea02c6",
-      "title": "فيديو يوتيوب",
-      "icon": "sicon-play-circle",
-      "name": "youtube-video",
-      "image": "https://cdn.imgchest.com/files/8c0059277643.jpg",
-      "preview_image": "https://cdn.imgchest.com/files/8c0059277643.jpg",
-      "fields": [
-        {
-          "type": "string",
-          "icon": "sicon-format-text-alt",
-          "label": "العنوان الرئيسي",
-          "multilanguage": true,
-          "id": "youtube_title",
-          "value": "شاهد الفيديو",
-          "format": "text"
-        },
-        {
-          "type": "string",
-          "icon": "sicon-typography",
-          "label": "العنوان الفرعي",
-          "multilanguage": true,
-          "id": "youtube_subtitle",
-          "value": "تعرف أكثر من خلال هذا الفيديو",
-          "format": "textarea"
-        },
-        {
-          "type": "string",
-          "icon": "sicon-link",
-          "label": "رابط فيديو يوتيوب",
-          "id": "youtube_video_url",
-          "placeholder": "https://youtube.com/watch?v=...",
-          "format": "text"
-        }
-      ]
-    }
-  ]
+    ]
 }
