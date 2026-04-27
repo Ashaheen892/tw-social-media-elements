@@ -121,8 +121,11 @@ export default class TikTokProfile extends LitElement {
         .tiktok-profile__embed {
           margin: 0 auto;
           width: 100%;
-          max-width: 540px;
-          aspect-ratio: 9 / 16;
+          max-width:878px;
+          height: 494px;
+
+          
+          // aspect-ratio: 1 / 1;
           overflow: hidden;
         }
 
@@ -132,8 +135,7 @@ export default class TikTokProfile extends LitElement {
           border: none;
           display: block;
         }
-
-        .tiktok-profile__empty {
+      .tiktok-profile__empty {
           text-align: center;
           color: #777;
         }
