@@ -58,7 +58,7 @@ class n extends k {
     return a`
       <style>
         .tiktok-profile {
-          max-width: calc(100% - 80px);
+          max-width: 990px;
           margin: 0 auto;
           padding: 20px 16px;
         }
@@ -88,11 +88,11 @@ class n extends k {
         .tiktok-profile__embed {
           margin: 0 auto;
           width: 100%;
-          max-width: 990px;
+          max-width:878px;
           height: 494px;
 
           
-          // aspect-ratio: 9 / 16;
+          // aspect-ratio: 1 / 1;
           overflow: hidden;
         }
 
@@ -102,11 +102,7 @@ class n extends k {
           border: none;
           display: block;
         }
-      .tiktok-profile__embed iframe #main{
-        width: 100%;
-      }
-
-        .tiktok-profile__empty {
+      .tiktok-profile__empty {
           text-align: center;
           color: #777;
         }
